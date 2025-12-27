@@ -1,0 +1,14 @@
+# Muhammad Aamir Saleem - Professional Portfolio
+
+This is a professional, recruiter-friendly portfolio website built for Muhammad Aamir Saleem, Principal QA Engineer.
+
+## Structure
+- **index.html**: Semantic HTML5 structure with SEO metadata.
+- **style.css**: CSS3 with CSS Variables for theme switching and Flexbox/Grid for layout.
+- **script.js**: Vanilla JavaScript for theme toggling and scroll effects.
+
+## Features
+- **Dark/Light Mode**: User preference is saved via LocalStorage.
+- **Responsive Design**: Optimized for Desktop, Tablet, and Mobile.
+- **Executive Tone**: Content derived strictly from the CV to ensure professional accuracy.
+- **Ready to Deploy**: Can be hosted on GitHub Pages or Netlify by simply uploading these three files.
