@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M. Aamir Saleem | Full-Stack QA Engineer</title>
     
-    <!-- FAVICON LINK -->
-    <link rel="icon" type="image/png" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Typography & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -45,84 +44,86 @@
         .nav-links a { text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.95rem; margin-left: 25px; transition: 0.3s; }
         .nav-links a:hover { color: var(--primary); }
 
-        /* --- SECTIONS COMMON --- */
+        /* --- SECTIONS --- */
         section { padding: 90px 0; width: 100%; overflow: hidden; }
         .container { max-width: 1300px; margin: 0 auto; width: 90%; }
         .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 50px; text-align: center; }
 
         /* --- HERO --- */
-        .hero { min-height: 85vh; display: flex; align-items: center; padding: 60px 0; }
+        .hero { min-height: 85vh; display: flex; align-items: center; }
         .hero-container { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; width: 100%; }
         .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 3.2rem; line-height: 1.1; margin-bottom: 25px; }
         .hero-content p { font-size: 1.2rem; color: var(--muted); margin-bottom: 40px; line-height: 1.7; }
         .hero-image img { width: 100%; max-width: 450px; border-radius: 24px; box-shadow: 20px 20px 0px var(--accent); transition: 0.4s; }
         .hero-image:hover img { transform: translateY(-5px); box-shadow: 25px 25px 0px var(--primary); }
 
-        /* --- EXECUTIVE OVERVIEW --- */
+        /* --- OVERVIEW --- */
         .overview { background: #fafafa; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
         .overview-box { background: #fff; padding: 50px; border-radius: 24px; border-left: 6px solid var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
         .overview-text { font-size: 1.15rem; color: var(--text); line-height: 1.8; }
         .overview-text p { margin-bottom: 25px; }
-        .overview-text p:last-child { margin-bottom: 0; }
 
-        /* --- PROFESSIONAL JOURNEY --- */
+        /* --- JOURNEY --- */
         .card { background: white; border: 1px solid var(--border); padding: 40px; border-radius: 16px; margin-bottom: 30px; transition: 0.3s; }
-        .card-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
-        .card-company { color: var(--accent); font-weight: 700; margin-bottom: 20px; display: block; font-size: 1.1rem; }
-        .card ul { list-style: none; }
-        .card li { margin-bottom: 12px; color: var(--muted); padding-left: 25px; position: relative; }
-        .card li::before { content: "•"; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+        .card-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 15px; }
+        .card li { margin-bottom: 12px; color: var(--muted); padding-left: 25px; position: relative; list-style: none; }
+        .card li::before { content: "•"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
 
-        /* --- SKILLS GRID (4 COLUMN ROW) --- */
+        /* --- EXPERTISE GRID (4 COLUMNS) --- */
         .skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .skill-box { background: #fff; padding: 30px 25px; border-radius: 20px; border: 1px solid var(--border); transition: 0.3s; height: 100%; }
+        .skill-box { background: #fff; padding: 30px 20px; border-radius: 20px; border: 1px solid var(--border); transition: 0.3s; height: 100%; }
         .skill-box:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
         .skill-box h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
-        .skill-list li { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; display: flex; align-items: flex-start; line-height: 1.4; font-weight: 500; }
+        .skill-list li { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; display: flex; align-items: flex-start; list-style: none; font-weight: 500; }
         .skill-list li i { margin-right: 10px; margin-top: 3px; width: 18px; text-align: center; color: var(--accent); }
 
-        /* --- BUTTONS --- */
-        .btn-group { display: flex; gap: 20px; }
-        .btn { padding: 16px 35px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s; font-size: 1rem; cursor: pointer; border: none; text-align: center; }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-primary:hover { background: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0, 143, 160, 0.15); }
-        .btn-outline { border: 2.5px solid var(--accent); color: var(--accent); background: transparent; }
-        .btn-outline:hover { background: var(--accent); color: white; }
-
-        /* --- CONTACT SECTION --- */
+        /* --- CONTACT --- */
         .contact { background: #111; color: white; border-radius: 40px 40px 0 0; }
         .contact-container { max-width: 700px; margin: 0 auto; width: 90%; text-align: center; }
-        .contact h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 20px; }
-        .contact-form { text-align: left; background: #1a1a1a; padding: 40px; border-radius: 20px; border: 1px solid #333; }
+        .contact-form { text-align: left; background: #1a1a1a; padding: 40px; border-radius: 20px; border: 1px solid #333; margin-bottom: 40px; }
         .form-control { width: 100%; background: #222; border: 1px solid #333; padding: 15px; color: white; border-radius: 8px; font-family: 'Inter'; outline: none; margin-bottom: 20px; font-size: 1rem; }
         .form-control:focus { border-color: var(--accent); }
 
-        /* --- UPDATED NOTIFICATION TOAST (Aligned with Theme) --- */
+        /* BUTTONS */
+        .btn { padding: 16px 35px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s; font-size: 1rem; cursor: pointer; border: none; text-align: center; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--accent); transform: translateY(-3px); }
+        .btn-outline { border: 2.5px solid var(--accent); color: var(--accent); background: transparent; }
+        .btn-outline:hover { background: var(--accent); color: white; }
+
+        /* TOOLTIP LOGIC */
+        [data-tooltip] { position: relative; cursor: pointer; }
+        [data-tooltip]::after {
+            content: attr(data-tooltip); position: absolute; bottom: 85px; left: 50%; transform: translateX(-50%);
+            background: #fff; color: #111; padding: 8px 15px; border-radius: 6px; font-size: 0.85rem; font-weight: 600;
+            white-space: nowrap; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 100;
+        }
+        [data-tooltip]:hover::after { opacity: 1; bottom: 75px; }
+
+        /* STATUS TOASTS */
         #form-status { 
-            display: none; background: #ffffff; border: 1px solid #e0e0e0; color: #333; 
+            display: none; background: #fff; border: 1px solid #e0e0e0; color: #333; 
             padding: 15px 25px; border-radius: 10px; font-weight: 500; margin-bottom: 25px; 
             text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: opacity 0.4s ease;
         }
         #form-status.status-success { border-bottom: 4px solid var(--accent); }
-        #form-status.status-success i { color: var(--accent); margin-right: 10px; }
-        
         #form-status.status-error { border-bottom: 4px solid var(--primary); }
-        #form-status.status-error i { color: var(--primary); margin-right: 10px; }
 
-        .social-links { display: flex; justify-content: center; gap: 20px; margin-top: 50px; }
-        .social-links a { color: white; font-size: 1.5rem; width: 60px; height: 60px; border: 1px solid #333; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; text-decoration: none; }
+        .social-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; }
+        .social-links a { 
+            color: white; font-size: 1.5rem; width: 60px; height: 60px; border: 1px solid #333; 
+            display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: 0.3s; 
+        }
         .social-links a:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-5px); }
 
+        /* FOOTER */
         footer { padding: 50px 20px; text-align: center; background: #111; color: #666; font-size: 0.95rem; border-top: 1px solid #222; }
+        .footer-info { margin-top: 15px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .footer-info span { color: #aaa; }
+        .footer-info i { color: var(--accent); margin-right: 8px; }
 
         @media (max-width: 1200px) { .skill-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 992px) { 
-            .hero-container { grid-template-columns: 1fr; text-align: center; } 
-            .hero-image { order: 1; display: flex; justify-content: center; } 
-            .hero-content { order: 2; }
-            .nav-links { display: none; }
-        }
-        @media (max-width: 600px) { .skill-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .skill-grid { grid-template-columns: 1fr; } .hero-container { grid-template-columns: 1fr; text-align: center; } .nav-links { display: none; } }
     </style>
 </head>
 <body>
@@ -166,8 +167,8 @@
             <div class="overview-box" data-aos="fade-up">
                 <div class="overview-text">
                     <p>I help organizations deliver reliable, scalable, and secure software by embedding quality into every stage of the product lifecycle. With 15+ years of experience across global enterprises, I’ve led quality engineering initiatives that enable teams to move faster, reduce risk, and deliver consistent business value.</p>
-                    <p>My work sits at the intersection of quality engineering, automation, and leadership. I partner closely with engineering leaders, product teams, and stakeholders to build systems that scale, teams that perform, and processes that last. From defining strategy to hands-on execution, I focus on turning complexity into clarity and outcomes.</p>
-                    <p>I’m currently open to new opportunities and excited to collaborate with organizations looking to strengthen their quality culture, elevate engineering excellence, and build products that customers trust.</p>
+                    <p>My work sits at the intersection of quality engineering, automation, and leadership. I partner closely with engineering leaders, product teams, and stakeholders to build systems that scale, teams that perform, and processes that last.</p>
+                    <p>I’m currently open to new opportunities and excited to collaborate with organizations looking to strengthen their quality culture and build products that customers trust.</p>
                 </div>
             </div>
         </div>
@@ -181,7 +182,7 @@
                     <h3>Full-Stack QA Engineer</h3>
                     <span style="color: var(--muted); font-weight: 600;">2023 — Present</span>
                 </div>
-                <span class="card-company">Elixir Technologies® (Global)</span>
+                <span style="color: var(--accent); font-weight: 700; margin-bottom: 20px; display: block;">Elixir Technologies® (Global)</span>
                 <ul>
                     <li>Overseeing SQA for Cloud Native Solutions in a HIPAA-compliant environment.</li>
                     <li>Designing automation frameworks leveraging Vibium, AI Agents, and Playwright.</li>
@@ -193,7 +194,7 @@
                     <h3>Lead Automation QA Engineer</h3>
                     <span style="color: var(--muted); font-weight: 600;">2020 — 2023</span>
                 </div>
-                <span class="card-company">Afiniti® (USA)</span>
+                <span style="color: var(--accent); font-weight: 700; margin-bottom: 20px; display: block;">Afiniti® (USA)</span>
                 <ul>
                     <li>Led AI-driven automation for Avaya Switch platforms across international markets.</li>
                     <li>Developed scalable Selenium Java frameworks for global regression testing.</li>
@@ -220,11 +221,11 @@
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="100">
                     <h4>Expertise</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-check-circle"></i> QA Leadership & Strategy</li>
-                        <li><i class="fas fa-check-circle"></i> Test Planning & Governance</li>
-                        <li><i class="fas fa-check-circle"></i> Agile & SDLC Expertise</li>
-                        <li><i class="fas fa-check-circle"></i> Mentorship & Development</li>
-                        <li><i class="fas fa-check-circle"></i> Enterprise App Testing</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> QA Leadership & Strategy</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Test Planning & Governance</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Agile & SDLC Expertise</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Mentorship & Development</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Enterprise App Testing</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
@@ -232,7 +233,7 @@
                     <ul class="skill-list">
                         <li><i class="fas fa-robot"></i> AI Agents & Vibium</li>
                         <li><i class="fas fa-server"></i> Playwright & MCP Server</li>
-                        <li><i class="fas fa-flask"></i> Selenium (TestNG & BDD)</li>
+                        <li><i class="fas fa-flask" style="color:var(--primary)"></i> Selenium (TestNG & BDD)</li>
                         <li><i class="fas fa-mobile-screen"></i> Appium & RestAssured</li>
                         <li><i class="fas fa-gauge-high"></i> Postman & JMeter</li>
                     </ul>
@@ -240,11 +241,11 @@
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
                     <h4>Credentials</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-certificate"></i> ISTQB® CTFL</li>
-                        <li><i class="fas fa-award"></i> AWS Certified Developer</li>
-                        <li><i class="fas fa-university"></i> MS Project Management</li>
-                        <li><i class="fas fa-infinity"></i> Continuous Testing & DevOps</li>
-                        <li><i class="fas fa-lightbulb"></i> Lifelong Learning 2025</li>
+                        <li><i class="fas fa-certificate" style="color:var(--primary)"></i> ISTQB® CTFL</li>
+                        <li><i class="fas fa-award" style="color:var(--primary)"></i> AWS Certified Developer</li>
+                        <li><i class="fas fa-university" style="color:var(--primary)"></i> MS Project Management</li>
+                        <li><i class="fas fa-infinity" style="color:var(--primary)"></i> Continuous Testing & DevOps</li>
+                        <li><i class="fas fa-lightbulb" style="color:var(--primary)"></i> Lifelong Learning 2025</li>
                     </ul>
                 </div>
             </div>
@@ -254,8 +255,6 @@
     <section id="contact" class="contact">
         <div class="contact-container">
             <h2>Let's work together.</h2>
-            <p style="color: #888; margin-bottom: 45px;">Currently open to SQA Leadership roles and strategic consulting.</p>
-            
             <div id="form-status"></div>
 
             <form id="contact-form" action="https://formspree.io/f/xkonrrdp" method="POST" class="contact-form">
@@ -276,14 +275,19 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/maamirmsaleem/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/ProfessionalTiger" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:aamirsaleem.sqa@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:00923006416365"><i class="fas fa-phone"></i></a>
+                <a href="mailto:aamirsaleem.sqa@gmail.com" data-tooltip="aamirsaleem.sqa@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:00923006416365" data-tooltip="+92 300 6416365"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/923006416365" data-tooltip="WhatsApp Me" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">&copy; 2025 M. Aamir Saleem. Quality Leadership & Governance.</div>
+        <div class="footer-info">
+            <span><i class="fas fa-envelope"></i> aamirsaleem.sqa@gmail.com</span>
+            <span><i class="fas fa-phone"></i> +92 300 6416365</span>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -319,13 +323,13 @@
                 headers: { 'Accept': 'application/json' }
             }).then(response => {
                 if (response.ok) {
-                    showMessage('<i class="fas fa-check-circle"></i> Sent successfully! I will reach out soon.', 'success');
+                    showMessage('<i class="fas fa-check-circle" style="color:var(--accent)"></i> Sent successfully!', 'success');
                     form.reset();
                 } else {
-                    showMessage('<i class="fas fa-exclamation-circle"></i> Error. Please try again.', 'error');
+                    showMessage('<i class="fas fa-exclamation-circle" style="color:var(--primary)"></i> Error occurred.', 'error');
                 }
             }).catch(() => {
-                showMessage('<i class="fas fa-wifi"></i> Network error.', 'error');
+                showMessage('Network error.', 'error');
             }).finally(() => {
                 submitBtn.innerText = "Send Message";
                 submitBtn.disabled = false;
