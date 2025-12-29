@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Aamir Saleem | Full-Stack QA Engineer</title>
+    <title>M. Aamir Saleem | Quality Engineering Leader</title>
     
     <!-- FAVICON (Path updated to Resources folder) -->
     <link rel="icon" type="image/x-icon" href="Resources/favicon.ico">
     <link rel="shortcut icon" href="Resources/favicon.ico" type="image/x-icon">
     
     <!-- Typography & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet">
     <!-- FontAwesome (General Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Devicon (Tech Stack Logos) -->
@@ -55,7 +55,7 @@
         }
         .spinner { width: 50px; height: 50px; border: 5px solid var(--border); border-top: 5px solid var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .loader-hidden { opacity: 0; visibility: hidden; }
+        .loader-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
         /* --- NAVIGATION --- */
         nav { position: sticky; top: 0; background: rgba(253, 253, 253, 0.98); backdrop-filter: blur(10px); padding: 15px 0; z-index: 1000; border-bottom: 1px solid var(--border); }
@@ -139,6 +139,8 @@
             background: #fff;
             display: block;
             border: 1px solid rgba(255,255,255,0.5);
+            min-height: 300px; /* Placeholder height in case image missing */
+            object-fit: cover;
         }
         
         .hero-image:hover img {
@@ -176,6 +178,16 @@
         .overview-box:hover { transform: translateY(-5px); }
         .overview-text p { margin-bottom: 25px; font-size: 1.15rem; color: var(--text); line-height: 1.8; }
         .overview-text p:last-child { margin-bottom: 0; }
+        
+        /* New Style for Highlight Line in Overview */
+        .overview-highlight {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.25rem !important;
+            color: var(--primary) !important;
+            margin-top: 30px !important;
+            font-weight: 600;
+        }
 
         /* --- HIGHLIGHTS & ARCHITECTURE DIAGRAMS (SQUEEZED 4-COLUMN) --- */
         .highlights { background: #fff; border-bottom: 1px solid var(--border); }
@@ -425,8 +437,8 @@
         <div class="container">
             <div class="hero-container">
                 <div class="hero-content" data-aos="fade-right">
-                    <h1>Full-Stack QA Engineer | GenAI QA Lead | Agile Specialist.</h1>
-                    <p>Innovative Quality Engineering Leader with 15+ years of experience redefining global quality standards through AI-powered innovation and intelligent delivery.</p>
+                    <h1>Quality Engineering Leader | AI-Driven QA | Automation & Scalable Test Architecture</h1>
+                    <p>15+ years of experience driving quality transformation across startups and global enterprises. I specialize in building scalable QA strategies, AI-powered automation frameworks, and high-performing engineering teams that accelerate delivery without compromising quality.</p>
                     <div class="btn-group">
                         <a href="#contact" class="btn btn-primary">Start a Conversation</a>
                         <a href="https://github.com/ProfessionalTiger" target="_blank" class="btn btn-outline">View Portfolio</a>
@@ -446,10 +458,13 @@
             <h2 class="section-title">Executive Overview</h2>
             <div class="overview-box" data-aos="fade-up">
                 <div class="overview-text">
-                    <p>I help organizations deliver reliable, scalable, and secure software by embedding quality into every stage of the product lifecycle. With 15+ years of experience across global enterprises, I’ve led quality engineering initiatives that enable teams to move faster, reduce risk, and deliver consistent business value.</p>
-                    <p>My work sits at the intersection of quality engineering, automation, and leadership. I collaborate closely with engineering leaders, product teams, and stakeholders to build systems that scale, teams that perform, and processes that last—ensuring quality is not an afterthought, but a strategic advantage.</p>
-                    <p>In addition to leadership roles, I support startups and enterprise organizations by helping teams accelerate delivery without compromising quality. I offer flexible, scalable engagement models with market-competitive and cost-effective rates, making high-quality engineering accessible to both growing teams and established enterprises.</p>
-                    <p>I’m currently open to new opportunities and partnerships, and I welcome conversations with organizations looking to strengthen their quality culture, enhance delivery confidence, and build products their customers trust.</p>
+                    <p>I help engineering organizations deliver reliable, scalable, and secure software by embedding quality across the delivery lifecycle and aligning QA strategy with business outcomes.</p>
+                    <p>With 15+ years of experience, I’ve led QA transformations that reduced release cycles by 40–60%, improved automation coverage by 50%+, and lowered production defects through early quality gates and risk-based testing.</p>
+                    <p>I partner closely with engineering leadership to improve delivery predictability, system stability, and team efficiency, using automation, AI-assisted quality insights, and strong cross-functional execution to scale with confidence.</p>
+                    
+                    <p class="overview-highlight">
+                        Open to leadership, consulting, and transformation roles.
+                    </p>
                 </div>
             </div>
         </div>
@@ -664,32 +679,31 @@
                 <div class="skill-box" data-aos="fade-up">
                     <h4>Services</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-vial" style="color:#525252"></i> Manual & Automation Testing</li>
-                        <li><i class="fas fa-cubes" style="color:#525252"></i> Framework Development</li>
-                        <li><i class="fas fa-mobile-alt" style="color:#525252"></i> Mobile & API Testing</li>
-                        <li><i class="fas fa-tachometer-alt" style="color:#525252"></i> Performance Testing</li>
-                        <li><i class="fas fa-sync" style="color:#525252"></i> CI/CD Implementation</li>
-                        <li><i class="fas fa-chart-line" style="color:#525252"></i> QA Process Maturity</li>
+                        <li><i class="fas fa-clipboard-check" style="color:#525252"></i> QA Strategy & Consulting</li>
+                        <li><i class="fas fa-cogs" style="color:#525252"></i> Test Automation Setup</li>
+                        <li><i class="fas fa-brain" style="color:#525252"></i> AI-Powered Testing Solutions</li>
+                        <li><i class="fas fa-users-cog" style="color:#525252"></i> QA Team Augmentation</li>
+                        <li><i class="fas fa-rocket" style="color:#525252"></i> Scalable QA for Startups</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="100">
                     <h4>Expertise</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> QA Leadership & Strategy</li>
-                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Test Planning & Governance</li>
-                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Agile & SDLC Expertise</li>
-                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Mentorship & Development</li>
-                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Enterprise App Testing</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Quality Engineering Strategy</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Test Automation Architecture</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> AI-Driven QA & Smart Testing</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> CI/CD & DevOps Integration</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--primary)"></i> Test Process Optimization</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
-                    <h4>Automation Stack</h4>
+                    <h4>Technical Stack</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-robot" style="color: #008fa0;"></i> AI Agents & Vibium</li>
-                        <li><i class="fas fa-masks-theater" style="color: #2EAD33;"></i> Playwright & MCP Server</li>
-                        <li><i class="devicon-selenium-original" style="color: #43B02A;"></i> Selenium (TestNG & BDD)</li>
-                        <li><i class="fas fa-mobile-screen-button" style="color: #662d91;"></i> Appium & RestAssured</li>
-                        <li><i class="devicon-postman-plain" style="color: #FF6C37;"></i> Postman & JMeter</li>
+                        <li><i class="fas fa-layer-group" style="color: #008fa0;"></i> Playwright, Selenium, Vibium</li>
+                        <li><i class="fas fa-code" style="color: #F7DF1E;"></i> Java / JavaScript / TypeScript</li>
+                        <li><i class="fas fa-exchange-alt" style="color: #43B02A;"></i> REST & GraphQL API Testing</li>
+                        <li><i class="fas fa-sync" style="color: #662d91;"></i> CI/CD: GitHub Actions, Jenkins</li>
+                        <li><i class="fab fa-docker" style="color: #0db7ed;"></i> Cloud & Containers (AWS, Docker)</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
@@ -738,45 +752,70 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        window.addEventListener('load', () => {
-            document.getElementById('loader').classList.add('loader-hidden');
-            AOS.init({ duration: 1000, once: true });
-        });
+        // --- FIXED PRELOADER LOGIC ---
+        function removeLoader() {
+            const loader = document.getElementById('loader');
+            if (loader && !loader.classList.contains('loader-hidden')) {
+                loader.classList.add('loader-hidden');
+                
+                // Initialize AOS animations only after loader is gone
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({ duration: 1000, once: true });
+                }
+            }
+        }
 
+        // 1. Try to remove loader when everything is loaded (ideal)
+        window.addEventListener('load', removeLoader);
+
+        // 2. FALLBACK: Force remove loader after 1.5 seconds 
+        // (This fixes the "forever loading" issue if images are missing)
+        setTimeout(removeLoader, 1500);
+
+        // --- MENU LOGIC ---
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuToggle.innerHTML = navMenu.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                menuToggle.innerHTML = navMenu.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+        }
 
+        // --- FORM LOGIC ---
         const form = document.getElementById("contact-form");
         const status = document.getElementById("form-status");
         const submitBtn = document.getElementById("submit-btn");
 
         function showMessage(content, type) {
-            status.innerHTML = content;
-            status.className = type === 'success' ? 'status-success' : 'status-error';
-            status.style.display = "block"; status.style.opacity = "1";
-            setTimeout(() => {
-                status.style.opacity = "0";
-                setTimeout(() => { status.style.display = "none"; }, 400);
-            }, 3000);
+            if(status) {
+                status.innerHTML = content;
+                status.className = type === 'success' ? 'status-success' : 'status-error';
+                status.style.display = "block"; status.style.opacity = "1";
+                setTimeout(() => {
+                    status.style.opacity = "0";
+                    setTimeout(() => { status.style.display = "none"; }, 400);
+                }, 3000);
+            }
         }
 
-        form.addEventListener("submit", function(e) {
-            e.preventDefault(); submitBtn.innerText = "Sending..."; submitBtn.disabled = true;
-            fetch(form.action, {
-                method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    showMessage('<i class="fas fa-check-circle" style="color:var(--accent)"></i> Sent successfully!', 'success');
-                    form.reset();
-                } else { showMessage('Error occurred.', 'error'); }
-            }).catch(() => { showMessage('Network error.', 'error'); }).finally(() => {
-                submitBtn.innerText = "Send Message"; submitBtn.disabled = false;
+        if (form) {
+            form.addEventListener("submit", function(e) {
+                e.preventDefault(); 
+                if(submitBtn) { submitBtn.innerText = "Sending..."; submitBtn.disabled = true; }
+                
+                fetch(form.action, {
+                    method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        showMessage('<i class="fas fa-check-circle" style="color:var(--accent)"></i> Sent successfully!', 'success');
+                        form.reset();
+                    } else { showMessage('Error occurred.', 'error'); }
+                }).catch(() => { showMessage('Network error.', 'error'); }).finally(() => {
+                    if(submitBtn) { submitBtn.innerText = "Send Message"; submitBtn.disabled = false; }
+                });
             });
-        });
+        }
     </script>
 </body>
 </html>
