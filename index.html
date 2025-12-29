@@ -11,7 +11,11 @@
     
     <!-- Typography & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome (General Icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon (Tech Stack Logos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
@@ -83,7 +87,7 @@
             animation: float-vertical 6s ease-in-out infinite;
         }
 
-        /* The Structured Background Glow - UPDATED to Professional Metallic Slate */
+        /* The Structured Background Glow - Professional Metallic Slate */
         .hero-backdrop {
             position: absolute;
             width: 100%; 
@@ -95,7 +99,7 @@
             z-index: -1;
             /* Blur creates the sophisticated 'Aura' effect */
             filter: blur(25px);
-            opacity: 0.7; /* Slightly higher opacity for visibility */
+            opacity: 0.7; 
             transform: scale(0.92);
             /* Animations */
             animation: 
@@ -107,7 +111,6 @@
             width: 100%; 
             max-width: 450px; 
             border-radius: 24px; 
-            /* Clean shadow for depth */
             box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
             transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             position: relative;
@@ -116,13 +119,11 @@
             border: 1px solid rgba(255,255,255,0.5);
         }
         
-        /* Interaction: Corporate "Lift" */
         .hero-image:hover img {
             transform: scale(1.02) translateY(-5px);
-            box-shadow: 0 30px 60px rgba(117, 127, 154, 0.2); /* Matching Slate shadow */
+            box-shadow: 0 30px 60px rgba(117, 127, 154, 0.2); 
         }
 
-        /* --- ANIMATION KEYFRAMES --- */
         @keyframes float-vertical {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-15px); }
@@ -166,8 +167,15 @@
         .skill-box { background: #fff; padding: 30px 20px; border-radius: 20px; border: 1px solid var(--border); transition: 0.3s; height: 100%; }
         .skill-box:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
         .skill-box h4 { font-family: 'Playfair Display', serif; font-size: 1.25rem; margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
-        .skill-list li { font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; display: flex; align-items: flex-start; line-height: 1.4; }
-        .skill-list li i { margin-right: 10px; margin-top: 3px; color: var(--accent); }
+        
+        /* Updated List Style for Icons */
+        .skill-list li { font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; display: flex; align-items: center; line-height: 1.4; }
+        .skill-list li i { 
+            margin-right: 12px; 
+            font-size: 1.2rem; /* Larger icons */
+            width: 25px; /* Fixed width for alignment */
+            text-align: center;
+        }
 
         /* --- TOOLTIP --- */
         [data-tooltip] { position: relative; }
@@ -178,7 +186,7 @@
         }
         [data-tooltip]:hover::after { opacity: 1; bottom: 70px; }
 
-        /* --- CONTACT SECTION (LIGHT GREY THEME) --- */
+        /* --- CONTACT SECTION --- */
         .contact { 
             background: var(--light-grey-bg); 
             color: var(--text); 
@@ -253,7 +261,7 @@
 
         .social-links a:hover { background: var(--accent); color: white; transform: translateY(-5px); animation-play-state: paused; border-color: var(--accent); }
 
-        /* --- FOOTER (LIGHT GREY THEME) --- */
+        /* --- FOOTER --- */
         footer { 
             padding: 50px 20px; 
             text-align: center; 
@@ -373,7 +381,7 @@
         </div>
     </section>
 
-    <!-- EXPERTISE & STACK -->
+    <!-- EXPERTISE & STACK (UPDATED ICONS) -->
     <section id="skills" style="background: #f9f9f9;">
         <div class="container">
             <h2 class="section-title">Expertise & Stack</h2>
@@ -381,12 +389,12 @@
                 <div class="skill-box" data-aos="fade-up">
                     <h4>Services</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-vial"></i> Manual & Automation Testing</li>
-                        <li><i class="fas fa-cubes"></i> Framework Development</li>
-                        <li><i class="fas fa-mobile-alt"></i> Mobile & API Testing</li>
-                        <li><i class="fas fa-tachometer-alt"></i> Performance Testing</li>
-                        <li><i class="fas fa-sync"></i> CI/CD Implementation</li>
-                        <li><i class="fas fa-chart-line"></i> QA Process Maturity</li>
+                        <li><i class="fas fa-vial" style="color:#525252"></i> Manual & Automation Testing</li>
+                        <li><i class="fas fa-cubes" style="color:#525252"></i> Framework Development</li>
+                        <li><i class="fas fa-mobile-alt" style="color:#525252"></i> Mobile & API Testing</li>
+                        <li><i class="fas fa-tachometer-alt" style="color:#525252"></i> Performance Testing</li>
+                        <li><i class="fas fa-sync" style="color:#525252"></i> CI/CD Implementation</li>
+                        <li><i class="fas fa-chart-line" style="color:#525252"></i> QA Process Maturity</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="100">
@@ -402,19 +410,18 @@
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
                     <h4>Automation Stack</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-robot"></i> AI Agents & Vibium</li>
-                        <li><i class="fas fa-server"></i> Playwright & MCP Server</li>
-                        <li><i class="fas fa-flask" style="color:var(--primary)"></i> Selenium (TestNG & BDD)</li>
-                        <li><i class="fas fa-mobile-screen"></i> Appium & RestAssured</li>
-                        <li><i class="fas fa-gauge-high"></i> Postman & JMeter</li>
+                        <li><i class="fas fa-robot" style="color: #008fa0;"></i> AI Agents & Vibium</li>
+                        <li><i class="fas fa-masks-theater" style="color: #2EAD33;"></i> Playwright & MCP Server</li>
+                        <li><i class="devicon-selenium-original" style="color: #43B02A;"></i> Selenium (TestNG & BDD)</li>
+                        <li><i class="fas fa-mobile-screen-button" style="color: #662d91;"></i> Appium & RestAssured</li>
+                        <li><i class="devicon-postman-plain" style="color: #FF6C37;"></i> Postman & JMeter</li>
                     </ul>
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
                     <h4>Credentials</h4>
                     <ul class="skill-list">
-                        <li><i class="fas fa-certificate" style="color:var(--primary)"></i> ISTQB® CTFL</li>
-                        <li><i class="fas fa-award" style="color:var(--primary)"></i> AWS Certified Developer</li>
-                        <!-- Updated Order below -->
+                        <li><i class="fas fa-award" style="color: #d4af37;"></i> ISTQB® CTFL</li>
+                        <li><i class="fab fa-aws" style="color: #FF9900;"></i> AWS Certified Developer</li>
                         <li><i class="fas fa-infinity" style="color:var(--primary)"></i> Continuous Testing & DevOps</li>
                         <li><i class="fas fa-university" style="color:var(--primary)"></i> MS Project Management</li>
                         <li><i class="fas fa-lightbulb" style="color:var(--primary)"></i> Lifelong Learning 2025</li>
