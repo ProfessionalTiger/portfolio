@@ -150,7 +150,15 @@ body {
 .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ddd; background: var(--card-bg); color: var(--text-color); }
 
 footer { padding: 40px 0; text-align: center; border-top: 1px solid #eee; }
-
+/* Updated style to force identical visual sizing */
+.img-icon {
+    width: 45px;      /* Fixed Width */
+    height: 30px;     /* Fixed Height to match ISTQB.jpg proportions */
+    object-fit: contain; /* Ensures logo isn't stretched but fills the box */
+    margin-right: 12px; 
+    vertical-align: middle;
+    mix-blend-mode: multiply; 
+}
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
