@@ -206,16 +206,31 @@
         .skill-list li i { 
             margin-right: 12px; 
             font-size: 1.2rem;
-            width: 25px;
+            width: 35px; /* Matched to Credential Wrap */
             text-align: center;
         }
 
-        /* Special style for Image Icons to blend better */
+        /* UPDATED: Wrapper for professional logo alignment */
+        .credential-icon-wrap {
+            width: 35px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
         .img-icon {
-            width: 45px; /* Bigger and clearer */
-            margin-right: 12px; 
-            vertical-align: middle;
-            mix-blend-mode: multiply; /* Removes white background visual box */
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+        }
+
+        /* Ensure one-line text for credentials */
+        .skill-list.credentials-list li {
+            white-space: nowrap;
         }
 
         /* --- TOOLTIP --- */
@@ -362,6 +377,11 @@
             .skill-grid { grid-template-columns: 1fr; }
             .contact h2 { font-size: 2.2rem; }
             .overview-box { padding: 30px 20px; }
+
+            /* Ensure credentials don't overflow on tiny screens */
+            .skill-list.credentials-list li {
+                white-space: normal;
+            }
         }
     </style>
 </head>
@@ -497,14 +517,28 @@
                 </div>
                 <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
                     <h4>Credentials</h4>
-                    <ul class="skill-list">
-                        <!-- Updated Clearer Images with Updated Paths -->
-                        <li><img src="Resources/ISTQB.jpg" alt="ISTQB Logo" class="img-icon">Certified Test Manager (CTAL-TM)</li>
-                        <li><img src="Resources/ISTQB.jpg" alt="ISTQB Logo" class="img-icon">Certified Tester (CTFL)</li>
-                        <li><img src="Resources/aws.jpg" alt="AWS Logo" class="img-icon" style="width: 25px;"> AWS Certified Developer</li>
-                        <li><i class="fas fa-infinity" style="color:var(--primary)"></i> Continuous Testing & DevOps</li>
-                        <li><i class="fas fa-university" style="color:var(--primary)"></i> MS Project Management</li>
-              
+                    <ul class="skill-list credentials-list">
+                        <!-- Standardized logo sizes with one-line text -->
+                        <li>
+                            <div class="credential-icon-wrap"><img src="Resources/ISTQB.jpg" alt="ISTQB" class="img-icon"></div>
+                            Certified Test Manager (CTAL-TM)
+                        </li>
+                        <li>
+                            <div class="credential-icon-wrap"><img src="Resources/ISTQB.jpg" alt="ISTQB" class="img-icon"></div>
+                            Certified Tester (CTFL)
+                        </li>
+                        <li>
+                            <div class="credential-icon-wrap"><img src="Resources/aws.jpg" alt="AWS" class="img-icon"></div>
+                            AWS Certified Developer
+                        </li>
+                        <li>
+                            <i class="fas fa-infinity" style="color:var(--primary)"></i>
+                            Continuous Testing & DevOps
+                        </li>
+                        <li>
+                            <i class="fas fa-university" style="color:var(--primary)"></i>
+                            MS Project Management
+                        </li>
                     </ul>
                 </div>
             </div>
